@@ -20,7 +20,7 @@ function displayGifs() {
 
 var btnValue = $(this).attr("data-name");
 // The GIPHY API
-var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + btnValue +
+var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + btnValue +
 "&api_key=dc6zaTOxFJmzC&limit=10"
 
 	$.ajax({
