@@ -1,0 +1,38 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	background-color: #b2b2b2;
+}
+
+button{
+	background-color: #f44262;
+	color: white;
+	padding: 8px;
+	margin: 5px;
+	font-size: 18px;
+	
+}
+.container {
+	background-color: rgba(102, 51, 153, .6)
+}
+#newbrand{
+	background-color: 
+}
+.results {
+	display: inline-block;
+	margin: 5px;
+}
+
+#newinput {
+	background-color: rgba(102, 51, 153, .6);
+	color: white;
+	padding: 8px;
+	margin: 5px;
+	font-size: 18px;
+}
+
+#title {
+	font-size: 35px;
+	letter-spacing: .4em;
+	margin: 20px;
+}
