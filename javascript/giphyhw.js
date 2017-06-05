@@ -35,7 +35,7 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + btnValue +
 		var results = response.data;
 
 		for (var i = 0; i < results.length; i++) {
-
+			 if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
 			var brandDiv = $("<div>");
 
 			brandDiv.addClass("results");
@@ -65,6 +65,7 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + btnValue +
 			}
 			});
 
+		}
 		}
 	})
 };
