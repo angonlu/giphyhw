@@ -4,22 +4,41 @@
 	<meta charset="utf-8">
 	<title>Giphy HW</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<header>
-	<h1 id="title">SHOW ME THE GIFS</h1>
-</header>
-<div class="container">
-	<div id="topics"></div>
-		<form id="newbrand-form">
-			<label for="newbrand">Add a topic to the list!</label>
-			<input id="newinput" type="text" name="newtopic">
-			<input id="newbrand" type="submit" name="Add a brand to the list!">
-		</form>
-	<div id="images"></div>
+
+
+<div id="jumbo" class="jumbotron">
+	<div class="container">
+    	<h1 class="col-xs-12">SHOW ME THE GIFS</h1>
+    </div>
+	
 </div>
+
+<form class="form-inline">
+  <div class="form-group">
+    <label for="newbrand">Add a Topic!</label>
+    <input id="newinput" type="text" class="form-control" name="newtopic">
+  </div>
+  <div class="form-group">
+ 	 <button id="newbrand" type="submit" class="btn btn-default">Add</button>
+  </div>
+</form>
+
+<div id="topics">
+	<p>Click on a button to see related Gifs</p>
+</div>
+		
+<div id="images" class=""></div>
+
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 
 <script type="text/javascript" src="javascript/giphyhw.js"></script>

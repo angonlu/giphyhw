@@ -6,13 +6,14 @@ function renderBtns() {
 for (var i = 0;i < topics.length; i++) {
 	var btns = $("<button>");
 
-	btns.addClass("brands");
+	btns.addClass("brands btn btn-lg");
 
 	btns.attr("data-name", topics[i]);
 
 	btns.text(topics[i]);
 
 	$("#topics").append(btns);
+
 }
 };
 
@@ -50,6 +51,7 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + btnValue +
 
 			brandDiv.append(p);
 			brandDiv.append(brandImage);
+			brandDiv.addClass("imgdiv")
 
 			$("#images").prepend(brandDiv);
 			$(".gif").click(function() {
@@ -76,6 +78,9 @@ $("#newbrand").click(function(event){
 		})
 
 renderBtns();
+$("#jumbo").hide().fadeIn(1500);
+$("#topics").hide().fadeIn(1500);
 
 $(document).on("click", ".brands", displayGifs);
+
 

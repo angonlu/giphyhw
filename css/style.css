@@ -1,10 +1,24 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	background-color: #b2b2b2;
+	background-image: url("../assets/images/grey-wall-bg.png");
 }
 
-button{
+.btn {
+	margin: 5px;
+}
+
+.jumbotron {
+	background-color: rgba(102, 51, 153, .6);
+	color:#f3e5ab;
+}
+
+label {
+	font-size: 25px;
+	margin-right: 10px;
+}
+
+button { 
 	background-color: #f44262;
 	color: white;
 	padding: 8px;
@@ -12,27 +26,41 @@ button{
 	font-size: 18px;
 	
 }
+
+#topics {
+	background-color: rgba(102, 51, 153, .6);
+}
+
 .container {
-	background-color: rgba(102, 51, 153, .6)
+	margin-top: 10px;
+	text-align: center;
 }
-#newbrand{
-	background-color: 
-}
+
 .results {
 	display: inline-block;
 	margin: 5px;
 }
-
-#newinput {
+.imgdiv {
+	border: 1px solid black;
 	background-color: rgba(102, 51, 153, .6);
 	color: white;
-	padding: 8px;
+}
+.gif {
+	padding: 2px;
+}
+
+#newinput {
+	background-color: rgba(0, 0, 0, .6);
+	color: white;
 	margin: 5px;
 	font-size: 18px;
 }
-
-#title {
-	font-size: 35px;
-	letter-spacing: .4em;
-	margin: 20px;
-}
+@media (max-width: 768px) {
+	h1 {
+		width: 100%;
+		font-size: 35px;
+	}
+	form {
+		width: 100%;
+	}
+  }
