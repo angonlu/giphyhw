@@ -18,6 +18,7 @@ label {
 	margin-right: 10px;
 }
 
+
 button { 
 	background-color: #f44262;
 	color: white;
@@ -52,8 +53,11 @@ button {
 #newinput {
 	background-color: rgba(0, 0, 0, .6);
 	color: white;
-	margin: 5px;
+	margin: 10px;
 	font-size: 18px;
+}
+.form-inline {
+	margin-left: 30%;
 }
 @media (max-width: 768px) {
 	h1 {

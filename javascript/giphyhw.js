@@ -81,6 +81,7 @@ $("#newbrand").click(function(event){
 renderBtns();
 $("#jumbo").hide().fadeIn(1500);
 $("#topics").hide().fadeIn(1500);
+$(".form-inline").hide().fadeIn(1500);
 
 $(document).on("click", ".brands", displayGifs);
 
