@@ -3,7 +3,7 @@ var topics = ["acura", "bmw", "chevrolet", "datsun", "dodge", "fiat", "honda", "
 
 function renderBtns() {
 	$("#topics").empty();
-for (var i = 0;i < topics.length; i++) {
+	for (var i = 0;i < topics.length; i++) {
 	var btns = $("<button>");
 
 	btns.addClass("brands btn btn-lg");
@@ -13,7 +13,6 @@ for (var i = 0;i < topics.length; i++) {
 	btns.text(topics[i]);
 
 	$("#topics").append(btns);
-
 }
 };
 
@@ -29,7 +28,7 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + btnValue +
 		method: "GET" })
 
 	.done(function(response){
-		// console.log(queryURL);
+
 		console.log(response);
 
 		var results = response.data;
